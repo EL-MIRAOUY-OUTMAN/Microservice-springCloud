@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/client-service/client-service.iml" filepath="$PROJECT_DIR$/client-service/client-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-inscription/microservice-inscription.iml" filepath="$PROJECT_DIR$/microservice-inscription/microservice-inscription.iml" />
       <module fileurl="file://$PROJECT_DIR$/projetmicroservice1.iml" filepath="$PROJECT_DIR$/projetmicroservice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-config/service-config.iml" filepath="$PROJECT_DIR$/service-config/service-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-gateway/service-gateway.iml" filepath="$PROJECT_DIR$/service-gateway/service-gateway.iml" />
     </modules>
   </component>
 </project>

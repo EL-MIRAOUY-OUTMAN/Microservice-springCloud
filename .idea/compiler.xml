@@ -7,15 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-inscription" />
+        <module name="service-gateway" />
+        <module name="service-config" />
+        <module name="client-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="client-service" target="17" />
       <module name="microservice-inscription" target="17" />
+      <module name="service-config" target="17" />
+      <module name="service-gateway" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-service" options="-parameters" />
       <module name="microservice-inscription" options="-parameters" />
+      <module name="service-config" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
     </option>
   </component>
 </project>
