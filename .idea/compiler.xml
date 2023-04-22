@@ -6,24 +6,39 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microservice-inscription" />
-        <module name="service-gateway" />
+        <module name="passerellee" />
         <module name="service-config" />
+        <module name="inscription-service" />
+        <module name="eureka" />
         <module name="client-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client-service" target="17" />
+      <module name="eureka" target="17" />
+      <module name="eureka-server" target="17" />
+      <module name="inscription-service" target="17" />
+      <module name="inscription-service (1)" target="17" />
       <module name="microservice-inscription" target="17" />
+      <module name="passerellee" target="17" />
+      <module name="servcie-eureka" target="17" />
       <module name="service-config" target="17" />
+      <module name="service-eureka" target="17" />
       <module name="service-gateway" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client-service" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="inscription-service" options="-parameters" />
+      <module name="inscription-service (1)" options="-parameters" />
       <module name="microservice-inscription" options="-parameters" />
+      <module name="passerellee" options="-parameters" />
+      <module name="servcie-eureka" options="-parameters" />
       <module name="service-config" options="-parameters" />
+      <module name="service-eureka" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
     </option>
   </component>

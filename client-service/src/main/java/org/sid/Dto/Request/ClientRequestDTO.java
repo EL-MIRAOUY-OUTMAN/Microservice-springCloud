@@ -1,7 +1,9 @@
 package org.sid.Dto.Request;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Size;
+import lombok.Builder;
+import lombok.Data;
+
+@Data @Builder
 
 public class ClientRequestDTO {
     private int cni;
@@ -9,6 +11,6 @@ public class ClientRequestDTO {
     private String prenom;
     private String adresse;
     private String login;
-    private int email;
+    private String email;
     private int  age;
 }

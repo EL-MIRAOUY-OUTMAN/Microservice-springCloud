@@ -7,6 +7,7 @@ import org.sid.Repository.ClientRepositiory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 @Service
@@ -38,11 +39,20 @@ public class ClientServiceImpl implements  ClientService{
     @Override
     public List<ClientResponceDto> getAllClients() {
         List<Client> liste=clientRepositiory.findAll();
-        return  liste.stream().map(client -> {
+        System.out.println(liste);
+
+        List<ClientResponceDto> listeres= new ArrayList<>();
+        liste.stream().forEach(inscription -> {
+            ClientResponceDto responsee=ClientResponceDto.builder().build();
+            BeanUtils.copyProperties(inscription,responsee);
+            listeres.add(responsee);
+        });
+        return listeres;
+        /*return  liste.stream().map(client -> {
             ClientResponceDto clientResponceDto=ClientResponceDto.builder().build();
             BeanUtils.copyProperties(client,clientResponceDto);
             return  clientResponceDto;
-        }).collect(Collectors.toList());
+        }).collect(Collectors.toList());*/
 
     }
 }

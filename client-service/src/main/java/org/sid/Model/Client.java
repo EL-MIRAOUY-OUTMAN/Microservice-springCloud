@@ -6,11 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Size;
+
 
 @Entity
-@NoArgsConstructor @AllArgsConstructor @Getter @Setter @Builder @ToString
+@NoArgsConstructor @AllArgsConstructor @Getter @Setter  @ToString
+@Builder
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,9 +18,9 @@ public class Client {
     private String nom;
     private String prenom;
     private String adresse;
-    @Size(min = 4)
+    //@Size(min = 4)
     private String login;
     //@Email
-    private int email;
+    private String email;
     private int  age;
 }
